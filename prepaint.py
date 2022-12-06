@@ -1,7 +1,6 @@
 import urllib.request
 import config
 import requests
-import urllib.request
 from os.path import exists
 
 def aipaint(description):
@@ -27,6 +26,7 @@ while count<=25:
     config.descriptions.append(description)
     
     filename='./images/image'+ (f"{count:02d}") +".jpg"
+    
     if(exists(filename)):
         print(filename+" already exists")
     else:

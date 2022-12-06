@@ -135,8 +135,6 @@ while True:
             row.append(rect)
         cells.append(row)
 
-    move = None
-
     left, _, right = pygame.mouse.get_pressed()
 
     if left:
